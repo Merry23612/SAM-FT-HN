@@ -11,67 +11,71 @@ tiny-organ ROI refinement, and organ-specific threshold calibration.
 
 ## Repository Structure
 
-```text
 SAM-FT-HN/
+|
 ├── assets/
-│   └── SAM_FT_HN_framework.png
-│
+│ └── SAM_FT_HN_framework.png
+|
+|
 ├── data/
-│   ├── imagesTr/
-│   ├── labelsTr/
-│   ├── imagesVal/
-│   └── labelsVal/
+│ ├── imagesTr/
+│ ├── labelsTr/
+│ ├── imagesVal/
+│ ├── labelsVal/
 │
+|
 ├── models/
-│   ├── coarse_localization/
-│   │   ├── __init__.py
-│   │   ├── unet3d.py
-│   │   └── coarse_model.py
-│   │
-│   └── sam_med3d/
-│       ├── __init__.py
-│       ├── build_sam3D.py
-│       └── modeling/
-│           ├── image_encoder3D.py
-│           ├── prompt_encoder3D.py
-│           ├── mask_decoder3D.py
-│           ├── sam3D.py
-│           └── transformer3D.py
-│
+│ ├── coarse_localization/
+│ │ ├── **init**.py
+│ │ ├── unet3d.py
+│ │ └── coarse_model.py
+│ |
+│ └── sam_med3d/
+│ ├── **init**.py
+│ ├── build_sam3D.py
+│ └── modeling/
+│ ├── image_encoder3D.py
+│ ├── prompt_encoder3D.py
+│ ├── mask_decoder3D.py
+│ ├── sam3D.py
+│ └── transformer3D.py
+|
 ├── datasets/
-│   ├── data_paths.py
-│   ├── dataset.json
-│   └── dataloader.py
-│
+│ ├── data_pathes.py
+│ ├── dataset.json
+│ └── dataloader.py
+|
 ├── training/
-│   ├── train_coarse.py
-│   ├── train_sam_ft_hn.py
-│   ├── losses.py
-│   └── trainer.py
-│
+│ ├── train_coarse.py
+│ ├── train_sam_ft_hn.py
+│ ├── losses.py
+│ └── trainer.py
+|
 ├── inference/
-│   ├── pipeline.py
-│   ├── predict_case.py
-│   └── batch_inference.py
-│
+│ ├── pipeline.py
+│ ├── predict_case.py
+│ └── batch_inference.py
+|
 ├── utils/
-│   ├── io.py
-│   ├── preprocessing.py
-│   ├── postprocessing.py
-│   └── visualization.py
-│
+│ ├── io.py
+│ ├── preprocessing.py
+│ ├── postprocessing.py
+│ └── visualization.py
+|
 ├── checkpoints/
-│   └── sam_ft_hn/
-│
+│ │└── sam_ft_hn/
+|
 ├── scripts/
-│   ├── train_coarse.sh
-│   ├── train_sam.sh
-│   └── inference.sh
+│ ├── train_coarse.sh
+│ ├── train_sam.sh
+│ ├── inference.sh
 │
+|
 ├── requirements.txt
 ├── LICENSE
 └── README.md
-```
+
+````
 
 ---
 
