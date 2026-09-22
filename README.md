@@ -142,6 +142,9 @@ SAM-FT-HN uses SAM-Med3D as its volumetric Segment Anything backbone.
 
 The required SAM-Med3D components should be available under:
 
+### Model Architecture
+
+```text
 models/
 └── sam_med3d/
     ├── __init__.py
@@ -151,8 +154,9 @@ models/
         ├── prompt_encoder3D.py
         ├── mask_decoder3D.py
         ├── sam3D.py
-        └── transformer3D.py
-        └── ......
+        ├── transformer3D.py
+        └── ...
+```
 
 If these files are already included in the repository, no additional source-code installation is required.
 
