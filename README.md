@@ -200,28 +200,28 @@ True
 10. Prepare the Dataset Directories
 
 Create the expected dataset structure:
-
+```text
 mkdir -p data/imagesTr
 mkdir -p data/labelsTr
 mkdir -p data/imagesVal
 mkdir -p data/labelsVal
 mkdir -p data/splits
-
+```
 The directory should look like:
-
+```text
 data/
 ├── imagesTr/
 ├── labelsTr/
 ├── imagesVal/
 ├── labelsVal/
 └── splits/
-
+```
 Place training CT volumes in imagesTr/ and their corresponding segmentation masks in labelsTr/.
 
 Place validation CT volumes in imagesVal/ and their corresponding masks in labelsVal/.
 
 For example:
-
+```text
 data/
 ├── imagesTr/
 │   ├── case_001.nii.gz
@@ -236,7 +236,7 @@ data/
 ├── imagesVal/
 ├── labelsVal/
 └── splits/
-
+```
 CT and label volumes for the same patient should use consistent filenames.
 
 
