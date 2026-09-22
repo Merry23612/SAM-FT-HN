@@ -172,11 +172,12 @@ mkdir -p checkpoints/sam_med3d
 
 Place the downloaded checkpoint in:
 
+```text
 SAM-FT-HN/
 └── checkpoints/
     └── exp/
         └── sam_model_dice_best.pth
-
+```
 The resulting path should therefore be:
 
 checkpoints/exp/sam_model_dice_best.pth
