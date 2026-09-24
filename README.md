@@ -77,15 +77,16 @@ SAM-FT-HN/
 
 ## Installation
 
-Install Conda
+1.Install Conda
 
 We recommend using Conda to manage the Python environment.
 
 If Conda is not already installed, install Miniconda or Anaconda first.
 
-Confirm that Conda is available:
+2.Confirm that Conda is available:
 
 conda --version
+
 3. Create the SAM-FT-HN Environment
 
 Create a new environment with Python 3.10:
@@ -107,6 +108,7 @@ The output should indicate Python 3.10.x.
 Before installing the project dependencies, update pip:
 
 python -m pip install --upgrade pip
+
 5. Install PyTorch
 
 SAM-FT-HN is designed to run with GPU acceleration. Install a PyTorch build that is compatible with the CUDA environment on your system.
@@ -197,6 +199,7 @@ python -c "import torch; print(torch.cuda.is_available())"
 For a GPU environment, the expected output is:
 
 True
+
 10. Prepare the Dataset Directories
 
 Create the expected dataset structure:
